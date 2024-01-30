@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Main.css";
+import style from "./Main.module.scss";
 import Modal from "../../modal/Modal";
 import MovieList from "../../movie/moveList/MovieList";
 import MovieFilter from "../../movie/movieFilter/MovieFilter";
@@ -26,7 +26,7 @@ const Main = ({ modal, modalOpenAndCloseHandler }) => {
   const [filtered, setFiltered] = useState([]);
 
   return (
-    <main className="main">
+    <main className={style.main}>
       {modal && (
         <Modal
           movies={movies}

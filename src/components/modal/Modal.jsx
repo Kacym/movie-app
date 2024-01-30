@@ -1,12 +1,12 @@
 import React from "react";
-import "./Modal.css";
+import styles from "./Modal.module.scss";
 import NewMovieForm from "../movie/newMovieForm/NewMovieForm";
 
 const Modal = ({ movies, closeModalHandler, setMovies }) => {
   return (
-    <div className="modal">
-      <div onClick={closeModalHandler} className="backdrop"></div>
-      <div className="formContainer">
+    <div className={styles.modal}>
+      <div onClick={closeModalHandler} className={styles.backdrop}></div>
+      <div className={styles.formContainer}>
         <NewMovieForm
           closeModalHandler={closeModalHandler}
           movies={movies}

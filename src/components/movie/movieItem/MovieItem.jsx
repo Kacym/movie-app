@@ -1,16 +1,16 @@
 import React from "react";
-import "./MovieItem.css";
+import style from "./MovieItem.module.scss";
 import Button from "../../UI/button/Button";
 
 const MovieItem = ({ movie }) => {
   return (
-    <li className="movie_item">
-      <div className="movie_img">
+    <li className={style.movie_item}>
+      <div className={style.movie_img}>
         <img src={movie.url} alt={movie.title} />
       </div>
-      <div className="movie_info">
+      <div className={style.movie_info}>
         <h2>{movie.title}</h2>
-        <span className="movie_rating">{movie.rating}/5</span>
+        <span className={style.movie_rating}>{movie.rating}/5</span>
         <p>{movie.genre}</p>
         <div>
           <Button

@@ -1,7 +1,6 @@
 input {
-    width: 450px;
-    padding: 20px 10px 20px 15px;
-    outline: solid;
-    overflow: auto;
-    text-align: start;
+  width: 450px;
+  padding: 20px 10px 20px 15px;
+  overflow: auto;
+  text-align: start;
 }
